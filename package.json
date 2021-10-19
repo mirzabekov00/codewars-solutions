@@ -6,11 +6,18 @@
   "author": "mirzabekov00 <prog.eldar@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/inquirer": "^8.1.3",
+    "@types/node": "^16.11.1",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
   },
   "scripts": {
     "watch": "nodemon --exec ts-node solutions/index.ts",
-    "build": "tsc"
+    "submit": "ts-node ./cli/index.ts",
+    "clear": "rm -rf ./node_modules && rm -rf ./dist",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
   }
 }
