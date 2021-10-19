@@ -16,11 +16,19 @@ const questions = [
     type: "input",
     message: "Task name:",
   },
+  {
+    name: "isCommitNeeded",
+    type: "confirm",
+    message: "Do you want to commit?",
+  },
 ];
 
-inquirer.prompt(questions).then(async ({ taskName, difficulty }) => {
-  const message = `feat(${difficulty}): resolve \`${taskName}\` kata`;
-
-  await git.add(".");
-  await git.commit(message);
-});
+inquirer
+  .prompt(questions)
+  .then(async ({ taskName, difficulty, isCommitNeeded }) => {
+    const message = `feat(${difficulty}): resolve \`${taskName}\` kata`;
+    if (isCommitNeeded) {
+      await git.add(".");
+      await git.commit(message);
+    }
+  });
