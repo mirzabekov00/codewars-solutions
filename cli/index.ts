@@ -1,4 +1,6 @@
 import * as inquirer from "inquirer";
+import simpleGit, { SimpleGit } from "simple-git";
+const git: SimpleGit = simpleGit();
 
 const questions = [
   {
@@ -17,5 +19,8 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(async ({ taskName, difficulty }) => {
-  console.log(`feat(${difficulty}): resolve \`${taskName}\` kata`);
+  const message = `feat(${difficulty}): resolve \`${taskName}\` kata`;
+
+  await git.add(".");
+  await git.commit(message);
 });
