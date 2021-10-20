@@ -27,11 +27,9 @@ const questions = [
 inquirer
   .prompt(questions)
   .then(async ({ taskName, difficulty, isCommitNeeded }) => {
-    const message = colors.bold.cyan(
-      `feat(${difficulty}-kyu): resolve \`${taskName}\` kata`
-    );
+    const message = `feat(${difficulty}-kyu): resolve \`${taskName}\` kata`;
 
-    console.log(`${messages.yourCommitIs} ${message}`);
+    console.log(`${messages.yourCommitIs} ${colors.cyan(message)}`);
 
     if (isCommitNeeded) {
       console.log(messages.doingCommit);
