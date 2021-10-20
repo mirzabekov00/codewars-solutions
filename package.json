@@ -13,7 +13,8 @@
   },
   "scripts": {
     "watch": "nodemon --exec ts-node solutions/index.ts",
-    "submit": "ts-node ./cli/index.ts",
+    "submit": "ts-node ./cli/submit.ts",
+    "create-task": "ts-node ./cli/create-task.ts",
     "clear": "rm -rf ./node_modules && rm -rf ./dist",
     "build": "tsc -b"
   },

@@ -1,5 +1,7 @@
 import * as inquirer from "inquirer";
 import * as colors from "colors";
+import messages from "./templates/messages";
+
 import simpleGit, { SimpleGit } from "simple-git";
 
 const git: SimpleGit = simpleGit();
@@ -21,12 +23,6 @@ const questions = [
     message: "Do you want to commit?",
   },
 ];
-
-const messages = {
-  yourCommitIs: `Your commit message is:`,
-  doingCommit: colors.yellow("Doing commit..."),
-  commitIsDone: colors.green("Commit is done!"),
-};
 
 inquirer
   .prompt(questions)
