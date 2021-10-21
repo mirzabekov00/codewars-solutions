@@ -4,6 +4,8 @@ import { multiplicationTable } from "./Multiplication table";
 import { partsSums } from "./Sums of Parts";
 import { cleanString } from "./Backspaces in string";
 import { G964 } from "./Playing with digits";
+import { digitalRoot } from "./Digital Root";
+import { decodeMorse } from "./Decode the Morse code";
 
 export {
   findEvenIndex,
@@ -12,4 +14,6 @@ export {
   partsSums,
   cleanString,
   G964,
+  digitalRoot,
+  decodeMorse,
 };
