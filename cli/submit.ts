@@ -9,8 +9,12 @@ const git: SimpleGit = simpleGit();
 const questions = [
   {
     name: "difficulty",
-    type: "input",
+    type: "list",
     message: "What is the difficulty of this task?",
+    choices: [...Array(9).keys()]
+      .slice(1)
+      .reverse()
+      .map((difficulty) => `${difficulty}-kyu`),
   },
   {
     name: "taskName",
@@ -27,7 +31,7 @@ const questions = [
 inquirer
   .prompt(questions)
   .then(async ({ taskName, difficulty, isCommitNeeded }) => {
-    const message = `feat(${difficulty}-kyu): resolve \`${taskName}\` kata`;
+    const message = `feat(${difficulty}): resolve \`${taskName}\` kata`;
 
     console.log(`${messages.yourCommitIs} ${colors.cyan(message)}`);
 

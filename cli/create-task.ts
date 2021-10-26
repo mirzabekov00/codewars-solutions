@@ -11,6 +11,7 @@ const questions = [
     message: "What is the difficulty of this task?",
     choices: [...Array(9).keys()]
       .slice(1)
+      .reverse()
       .map((difficulty) => `${difficulty}-kyu`),
   },
   {
