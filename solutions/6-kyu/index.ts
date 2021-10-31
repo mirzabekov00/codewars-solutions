@@ -6,6 +6,7 @@ import { cleanString } from "./Backspaces in string";
 import { G964 } from "./Playing with digits";
 import { digitalRoot } from "./Digital Root";
 import { decodeMorse } from "./Decode the Morse code";
+import { arrayDiff } from "./Array diff";
 import { countBits } from "./Bit Counting";
 
 export {
@@ -18,4 +19,5 @@ export {
   digitalRoot,
   decodeMorse,
   countBits,
+  arrayDiff,
 };
