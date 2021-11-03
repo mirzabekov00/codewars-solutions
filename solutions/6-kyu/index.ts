@@ -8,6 +8,7 @@ import { digitalRoot } from "./Digital Root";
 import { decodeMorse } from "./Decode the Morse code";
 import { arrayDiff } from "./Array diff";
 import { countBits } from "./Bit Counting";
+import { alphabetPosition } from "./Replace With Alphabet Position";
 
 export {
   findEvenIndex,
@@ -20,4 +21,5 @@ export {
   decodeMorse,
   countBits,
   arrayDiff,
+  alphabetPosition,
 };
