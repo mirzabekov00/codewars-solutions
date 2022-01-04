@@ -10,6 +10,7 @@ import { arrayDiff } from "./Array diff";
 import { countBits } from "./Bit Counting";
 import { alphabetPosition } from "./Replace With Alphabet Position";
 import { high } from "./Highest Scoring Word";
+import { digital_root } from "./Sum of Digits";
 
 export {
   findEvenIndex,
@@ -24,4 +25,5 @@ export {
   arrayDiff,
   alphabetPosition,
   high,
+  digital_root,
 };
