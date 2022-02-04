@@ -11,6 +11,7 @@ import { countBits } from "./Bit Counting";
 import { alphabetPosition } from "./Replace With Alphabet Position";
 import { high } from "./Highest Scoring Word";
 import { digital_root } from "./Sum of Digits";
+import { narcissistic } from "./Does my number look big in this";
 
 export {
   findEvenIndex,
@@ -26,4 +27,5 @@ export {
   alphabetPosition,
   high,
   digital_root,
+  narcissistic,
 };
