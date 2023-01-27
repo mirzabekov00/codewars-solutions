@@ -21,6 +21,6 @@
   "dependencies": {
     "colors": "^1.4.0",
     "inquirer": "^8.2.0",
-    "simple-git": "^3.3.0"
+    "simple-git": "^3.16.0"
   }
 }
