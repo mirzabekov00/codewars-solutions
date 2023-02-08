@@ -23,5 +23,3 @@ export function digital_root(n: number): number {
 
   return digital_root(sum(nArr));
 }
-
-console.log(digital_root(99)); // 9
